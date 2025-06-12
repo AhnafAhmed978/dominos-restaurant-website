@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+#hero {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dominos_pizza_logo.svg/2560px-Dominos_pizza_logo.svg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 300px; /* Adjust height if needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px; /* Space above slider */
+}
+
+
+
+#hero h1 {
+  font-size: 50px;
+  color: white;
+}
+
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 20px
+}
+
+nav {
+  position: relative;
+  background-color: green;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+}
+
+
+nav .menu {
+  list-style: none;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+nav .menu li a {
+  color:white ;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  display: block;
+width: 100%;
+box-sizing: border-box;
+padding: 15px 20px;
+}
+
+nav .menu li a:hover {
+  background-color: purple;
+}
+
+nav input[type="checkbox"] {
+  display: none;
+}
+
+nav .toggle-navbar {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 22px;
+  justify-content: space-between;
+}
+
+nav .toggle-navbar .bar {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  nav .menu {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color:crimson;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    padding: 10px 0;
+    border-radius: 5px;
+  }
+
+  nav .menu li {
+    width: 100%;
+  }
+
+nav input[type="checkbox"]:checked ~ .menu {
+display: flex;
+}
+
+nav .toggle-navbar {
+    display: flex;
+}
+}
+
+
+
+#hero .container {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.slider-container {
+  max-width: 900px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+
+.slider img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% { transform: translateX(calc(-100% + 900px));}
+}
+
+.slider-navigation {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slider-navigation a {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  text-indent: -9999px;
+}
+
+.slider-navigation a:hover,
+.slider-navigation a:focus {
+  opacity: 1;
+}
+
+footer {
+  background-color: green;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: black;
+}
+
+.contactLinkStyling {
+    background-color:darkturquoise;
+    color: blue;
+    font-size: 40px;
+}
+
+.form-submission {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin-left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
