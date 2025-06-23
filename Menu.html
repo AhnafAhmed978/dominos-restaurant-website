@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head> 
 <body>
     <div class = "page-container">
@@ -18,14 +19,63 @@
     <li class="nav-item"><a class="nav-link" href="Menu.html">Menu</a></li>
     <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
     <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
-    <div class = "cart-styling">
-        <button class = "menu-cart"><i class = "fa-solid fa-cart-shopping"></i><span class = "cart-count">0</span></button>
-    </div>
+    <button class = "menu-cart"><i class = "fas fa-shopping-cart"></i><span class = "cart-count">0</span></button>
     </ul>
 </nav>
 
-    <main>
-        <div class = "grid-layout-cards">
+    <div class = "menu-container">
+        <div class="menu-main">
+            <div class="product-wrapper">
+                <div class="product" data-product = "1">
+                    <img class = "product-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRew1G46yIxpX9-_EKL7YJXgewHlD6mPJvGVQ&s" alt="Dominoes veggie pizza">
+                    <h3 class = "product-title">Veggie Pizza</h3>
+                    <p class = "product-price">$18.57</p>
+                    <button class = "add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product" data-product = "2">
+                    <img class = "product-img" src="https://www.mashed.com/img/gallery/every-dominos-pizza-ranked-from-worst-to-best/13-dominos-wisconsin-6-cheese-pizza-1601322750.jpg" alt="Dominoes 6 cheese">
+                    <h3 class = "product-title">Cheese Pizza</h3>
+                    <p class = "product-price">$10.99</p>
+                    <button class = "add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product" data-product = "3">
+                    <img class = "product-img" src="https://media-cdn.tripadvisor.com/media/photo-s/14/02/3d/1d/meatzza.jpg" alt="Dominoes MeatZZa">
+                    <h3 class = "product-title">MeatZZa</h3>
+                    <p class = "product-price">$16.39</p>
+                    <button class = "add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h3 class = "cart-title"> Your Cart </h3>
+            <div class="cart-list">
+
+            </div>
+            <hr class = "divider">
+            <div class="cart-action">
+                <div class="cart-amt" id = "final-price">
+                    <span> Total </span>
+                    <span class = "cart-amount"> $0.00 </span>
+                </div>
+                <button class = "cart-btn"> Checkout </button>
+            </div>
+        </div>
+    </div>
+
+    <footer><hr>
+            Business hours: 10:30 AM - 1 AM<br>
+            <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdominos%2F&is_from_rle" target="_blank" rel = "noopener noreferrer">Instagram</a><br>
+            <a href="https://www.facebook.com/Dominos/" target="_blank" rel = "noopener noreferrer">Facebook</a>
+        </footer>
+    </div>
+</body>
+</html>
+
+<!--
+<div class = "grid-layout-cards">
             <div class = "card">
                 <img src="https://www.mashed.com/img/gallery/every-dominos-pizza-ranked-from-worst-to-best/13-dominos-wisconsin-6-cheese-pizza-1601322750.jpg" alt="Dominoes 6 cheese">
                 <div class = "container-menu">
@@ -54,15 +104,4 @@
             </div>
         </div>
 
-
-    </main> 
-    <footer><hr>
-            Business hours: 10:30 AM - 1 AM<br>
-            <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdominos%2F&is_from_rle" target="_blank" rel = "noopener noreferrer">Instagram</a><br>
-            <a href="https://www.facebook.com/Dominos/" target="_blank" rel = "noopener noreferrer">Facebook</a>
-        </footer>
-    </div>
-</body>
-</html>
-
-
+-->
