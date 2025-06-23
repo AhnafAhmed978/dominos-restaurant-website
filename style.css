@@ -110,7 +110,7 @@ nav .toggle-navbar .bar {
   .cart {
     position: fixed;
     top: 0;
-    left: 0
+    left: 0;
     width: 100vw;
     height: 100vh;
     margin: 0 !important;
@@ -474,4 +474,9 @@ footer a:hover {
   border-radius: 4px;
   cursor: pointer;
   border: none;
+}
+
+.cart-btn:hover, .clear-cart-btn:hover {
+  background-color: cadetblue;
+  color: black;
 }
