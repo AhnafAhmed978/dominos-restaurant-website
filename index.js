@@ -25,7 +25,7 @@ clearCartBtnElement.addEventListener("click", () => {
     cart = {};
     cartItemsElement.innerHTML = "";
     ttlAmount = 0;
-    cartAmtElement.innerText = `$ ${0.00}`;
+    cartAmtElement.innerText = `$0.00`;
 })
 
 let ttlAmount = 0;
