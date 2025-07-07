@@ -21,11 +21,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 300px; /* Adjust height if needed */
+  height: 300px; 
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px; /* Space above slider */
+  margin-bottom: 40px; 
 }
 
 
@@ -320,13 +320,14 @@ footer a:hover {
 }
 
 .product-img {
-  width: auto;
+  width: 200px;
   height: 150px;
-  object-fit: contain;
+  object-fit: cover; 
   object-position: center;
   margin-bottom: 10px;
   border-radius: 8px;
 }
+
 
 .add-to-cart {
   border: none;
@@ -479,4 +480,24 @@ footer a:hover {
 .cart-btn:hover, .clear-cart-btn:hover {
   background-color: cadetblue;
   color: black;
+}
+
+.cart-blue {
+  background-color: blue;
+  color: white;
+}
+.btn-green {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+  border-radius: 0.2rem;
+}
+
+.btn-green:hover, .btn-green:focus {
+  background-color: #218838;
+  color: white;
+  outline: none;
+  box-shadow: none;
 }
